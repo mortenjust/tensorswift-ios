@@ -118,7 +118,7 @@ NSString* FilePathForResourceName(NSString* name, NSString* extension) {
   return file_path;
 }
 
-tensorflow::Status LoadModel(NSString* file_name, NSString* file_type,
+  tensorflow::Status LoadModel(NSString* file_name, NSString* file_type,
                              std::unique_ptr<tensorflow::Session>* session) {
   tensorflow::SessionOptions options;
 

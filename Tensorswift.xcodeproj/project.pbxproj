@@ -12,7 +12,6 @@
 		C87CC5C91E24B863000F83A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C87CC5C71E24B863000F83A5 /* Main.storyboard */; };
 		C87CC5CB1E24B863000F83A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C87CC5CA1E24B863000F83A5 /* Assets.xcassets */; };
 		C87CC5CE1E24B863000F83A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C87CC5CC1E24B863000F83A5 /* LaunchScreen.storyboard */; };
-		C87CC5D81E24B8B4000F83A5 /* Bridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = C87CC5D71E24B8B4000F83A5 /* Bridge.mm */; };
 		C87CC5DB1E24BAE7000F83A5 /* libprotobuf-lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C87CC5D91E24BAE7000F83A5 /* libprotobuf-lite.a */; };
 		C87CC5DC1E24BAE7000F83A5 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C87CC5DA1E24BAE7000F83A5 /* libprotobuf.a */; };
 		C87CC5DF1E24BCEB000F83A5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87CC5DE1E24BCEB000F83A5 /* Accelerate.framework */; };
@@ -20,6 +19,10 @@
 		C87CC5ED1E260EBE000F83A5 /* tensorflow_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = C87CC5EB1E260EBE000F83A5 /* tensorflow_utils.mm */; };
 		C8D4A38F1E288255005B0640 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4A38E1E288255005B0640 /* VideoCapture.swift */; };
 		C8D4A3911E288321005B0640 /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4A3901E288321005B0640 /* AVCaptureDevice+Extension.swift */; };
+		C8D4A3B81E28B86E005B0640 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D4A3B71E28B86E005B0640 /* UIKit.framework */; };
+		C8D4A3BA1E28BB5C005B0640 /* TensorBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8D4A3B91E28BB5C005B0640 /* TensorBridge.mm */; };
+		C8D4A3BE1E294D43005B0640 /* output_graph_stripped.pb in Resources */ = {isa = PBXBuildFile; fileRef = C8D4A3BC1E294D43005B0640 /* output_graph_stripped.pb */; };
+		C8D4A3BF1E294D43005B0640 /* output_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = C8D4A3BD1E294D43005B0640 /* output_labels.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +33,8 @@
 		C87CC5CA1E24B863000F83A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C87CC5CD1E24B863000F83A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C87CC5CF1E24B863000F83A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C87CC5D51E24B88C000F83A5 /* Bridge.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Bridge.h; path = Tensorswift/Bridge.h; sourceTree = "<group>"; };
+		C87CC5D51E24B88C000F83A5 /* TensorBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TensorBridge.h; path = Tensorswift/TensorBridge.h; sourceTree = "<group>"; };
 		C87CC5D61E24B8B4000F83A5 /* Tensorswift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tensorswift-Bridging-Header.h"; sourceTree = "<group>"; };
-		C87CC5D71E24B8B4000F83A5 /* Bridge.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Bridge.mm; sourceTree = "<group>"; };
 		C87CC5D91E24BAE7000F83A5 /* libprotobuf-lite.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libprotobuf-lite.a"; sourceTree = "<group>"; };
 		C87CC5DA1E24BAE7000F83A5 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libprotobuf.a; sourceTree = "<group>"; };
 		C87CC5DE1E24BCEB000F83A5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -42,6 +44,10 @@
 		C87CC5EB1E260EBE000F83A5 /* tensorflow_utils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = tensorflow_utils.mm; sourceTree = "<group>"; };
 		C8D4A38E1E288255005B0640 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		C8D4A3901E288321005B0640 /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
+		C8D4A3B71E28B86E005B0640 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C8D4A3B91E28BB5C005B0640 /* TensorBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TensorBridge.mm; sourceTree = "<group>"; };
+		C8D4A3BC1E294D43005B0640 /* output_graph_stripped.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = output_graph_stripped.pb; sourceTree = "<group>"; };
+		C8D4A3BD1E294D43005B0640 /* output_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output_labels.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D4A3B81E28B86E005B0640 /* UIKit.framework in Frameworks */,
 				C87CC5DF1E24BCEB000F83A5 /* Accelerate.framework in Frameworks */,
 				C87CC5DC1E24BAE7000F83A5 /* libprotobuf.a in Frameworks */,
 				C87CC5DB1E24BAE7000F83A5 /* libprotobuf-lite.a in Frameworks */,
@@ -61,11 +68,12 @@
 		C87CC5B71E24B863000F83A5 = {
 			isa = PBXGroup;
 			children = (
+				C8D4A3BB1E294D1B005B0640 /* Model */,
 				C8D4A3901E288321005B0640 /* AVCaptureDevice+Extension.swift */,
 				C8D4A38E1E288255005B0640 /* VideoCapture.swift */,
 				C87CC5D61E24B8B4000F83A5 /* Tensorswift-Bridging-Header.h */,
-				C87CC5D51E24B88C000F83A5 /* Bridge.h */,
-				C87CC5D71E24B8B4000F83A5 /* Bridge.mm */,
+				C87CC5D51E24B88C000F83A5 /* TensorBridge.h */,
+				C8D4A3B91E28BB5C005B0640 /* TensorBridge.mm */,
 				C87CC5E81E260EBE000F83A5 /* ios_image_load.h */,
 				C87CC5E91E260EBE000F83A5 /* ios_image_load.mm */,
 				C87CC5EA1E260EBE000F83A5 /* tensorflow_utils.h */,
@@ -100,11 +108,21 @@
 		C87CC5DD1E24BCEB000F83A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8D4A3B71E28B86E005B0640 /* UIKit.framework */,
 				C87CC5D91E24BAE7000F83A5 /* libprotobuf-lite.a */,
 				C87CC5DA1E24BAE7000F83A5 /* libprotobuf.a */,
 				C87CC5DE1E24BCEB000F83A5 /* Accelerate.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8D4A3BB1E294D1B005B0640 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8D4A3BC1E294D43005B0640 /* output_graph_stripped.pb */,
+				C8D4A3BD1E294D43005B0640 /* output_labels.txt */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +186,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D4A3BE1E294D43005B0640 /* output_graph_stripped.pb in Resources */,
+				C8D4A3BF1E294D43005B0640 /* output_labels.txt in Resources */,
 				C87CC5CE1E24B863000F83A5 /* LaunchScreen.storyboard in Resources */,
 				C87CC5CB1E24B863000F83A5 /* Assets.xcassets in Resources */,
 				C87CC5C91E24B863000F83A5 /* Main.storyboard in Resources */,
@@ -183,9 +203,9 @@
 			files = (
 				C87CC5C61E24B863000F83A5 /* ViewController.swift in Sources */,
 				C87CC5EC1E260EBE000F83A5 /* ios_image_load.mm in Sources */,
-				C87CC5D81E24B8B4000F83A5 /* Bridge.mm in Sources */,
 				C87CC5ED1E260EBE000F83A5 /* tensorflow_utils.mm in Sources */,
 				C8D4A38F1E288255005B0640 /* VideoCapture.swift in Sources */,
+				C8D4A3BA1E28BB5C005B0640 /* TensorBridge.mm in Sources */,
 				C8D4A3911E288321005B0640 /* AVCaptureDevice+Extension.swift in Sources */,
 				C87CC5C41E24B863000F83A5 /* AppDelegate.swift in Sources */,
 			);
@@ -242,6 +262,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -292,6 +313,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;

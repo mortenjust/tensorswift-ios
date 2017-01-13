@@ -9,9 +9,10 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
+class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, TensorDelegate {
     
     @IBOutlet weak var previewView: UIView!
+    var bridge:TensorBridge = TensorBridge()
     
 //    AVCaptureVideoPreviewLayer *previewLayer;
 //    AVCaptureVideoDataOutput *videoDataOutput;
@@ -43,9 +44,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        
+        bridge.loadModel()
+        bridge.delegate = self
         
         let spec = VideoSpec(fps: 3, size: CGSize(width: 1280, height: 720))
         videoCapture = VideoCapture(cameraType: .back,
@@ -58,13 +58,16 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
            
             // run cnn on pixelbuffer frame
             
-            
-            
-           
             print("we havea  buffer")
+            self.bridge.runCNN(onFrame: imageBuffer)
         }
 
         
+    }
+    
+    func tensorDeviceListUpdated(_ devices: [AnyHashable : Any]!) {
+        print("#tensordevicelist updated with \(devices.count) devices ")
+        print(devices)
     }
     
     
