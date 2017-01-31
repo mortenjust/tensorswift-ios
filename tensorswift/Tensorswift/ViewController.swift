@@ -47,7 +47,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         bridge.loadModel()
         bridge.delegate = self
         
-        let spec = VideoSpec(fps: 3, size: CGSize(width: 1280, height: 720))
+        let spec = VideoSpec(fps: 3, size: CGSize(width: 640, height: 480))
         videoCapture = VideoCapture(cameraType: .back,
                                     preferredSpec: spec,
                                     previewContainer: previewView.layer)
@@ -65,10 +65,21 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
     }
     
-    func tensorDeviceListUpdated(_ devices: [AnyHashable : Any]!) {
-        print("#tensordevicelist updated with \(devices.count) devices ")
-        print(devices)
+    func tensorLabelListUpdated(_ devices:[AnyHashable : Any]){
+        
+        print("#tensorlabellist updated with \(devices.count) devices ")
+        
+        for seenDevice in devices {
+            let label = String(describing: seenDevice.key)
+            let confidence = seenDevice.value as! Double
+            print("Just saw \(label) with \(confidence)")
+        }
+
+        
     }
+    
+    
+    
     
     
 //    func setupAVCapture(){

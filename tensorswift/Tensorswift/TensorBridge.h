@@ -7,7 +7,7 @@
 @class TensorBridge;
 
 @protocol TensorDelegate <NSObject>
--(void)tensorDeviceListUpdated:(NSDictionary*)devices;
+-(void)tensorLabelListUpdated:(NSDictionary*)devices;
 @end
 
 @interface TensorBridge : NSObject

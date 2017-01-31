@@ -355,7 +355,7 @@
 				);
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-force_load",
-					"/Users/mortenjust/code/tensorflow/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a",
+					"$(SRCROOT)/../tensorflow/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mortenjust.Tensorswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,7 +390,7 @@
 				);
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-force_load",
-					"/Users/mortenjust/code/tensorflow/tensorflow/makefile/gen/lib/libtensorflow-core.a",
+					"$(SRCROOT)/../tensorflow/tensorflow/makefile/gen/lib/libtensorflow-core.a",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mortenjust.Tensorswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
