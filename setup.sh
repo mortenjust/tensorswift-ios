@@ -1,2 +1,2 @@
-tensorflow/contrib/makefile/download_dependencies.sh
+tensorflow/tensorflow/contrib/makefile/download_dependencies.sh
 tensorflow/tensorflow/contrib/makefile/build_all_ios.sh
