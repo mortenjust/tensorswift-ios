@@ -81,13 +81,8 @@ static const NSString *AVCaptureStillImageIsCapturingStillImageContext =
 }
 
 - (void)dealWithPredictionValues:(NSDictionary *)newValues {
-    
-    NSLog(@"#Dealing with prediction values");
-    
-    //    printf("Calling delegate with the found objects)");
+//    NSLog(@"#Dealing with prediction values");
     [self.delegate tensorLabelListUpdated:newValues];
-    
-    // [remoteController seeingDevicesWithDevices:newValues];
 }
 
 
