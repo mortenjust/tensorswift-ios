@@ -65,13 +65,13 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
     }
     
-    func tensorLabelListUpdated(_ devices:[AnyHashable : Any]){
+    func tensorLabelListUpdated(_ recognizedObjects:[AnyHashable : Any]){
         
-        print("#tensorlabellist updated with \(devices.count) devices ")
+        print("#tensorlabellist updated with \(recognizedObjects.count) devices ")
         
-        for seenDevice in devices {
-            let label = String(describing: seenDevice.key)
-            let confidence = seenDevice.value as! Double
+        for seenObject in recognizedObjects {
+            let label = String(describing: seenObject.key)
+            let confidence = seenObject.value as! Double
             print("Just saw \(label) with \(confidence)")
         }
 

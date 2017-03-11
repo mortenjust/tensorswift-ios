@@ -16,7 +16,7 @@
 
 // If you have your own model, modify this to the file name, and make sure
 // you've added the file to your app resources too.
-static NSString* model_file_name = @"output_graph_stripped";
+static NSString* model_file_name = @"retrained_graph_stripped";
 static NSString* model_file_type = @"pb";
 // This controls whether we'll be loading a plain GraphDef proto, or a
 // file created by the convert_graphdef_memmapped_format utility that wraps a
