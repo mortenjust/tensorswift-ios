@@ -24,7 +24,7 @@ static NSString* model_file_type = @"pb";
 // reduce overall memory usage.
 const bool model_uses_memory_mapping = false;
 // If you have your own model, point this to the labels file.
-static NSString* labels_file_name = @"output_labels";
+static NSString* labels_file_name = @"retrained_labels";
 static NSString* labels_file_type = @"txt";
 // These dimensions need to match those the model was trained with.
 //const int wanted_input_width = 224;
