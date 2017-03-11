@@ -49,23 +49,7 @@ class VideoCapture: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, AVCa
             }
             captureSession.addInput(videoDeviceInput)
         }
-        
-        // setup audio device input
-        do {
-            let audioDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeAudio)
-            let audioDeviceInput: AVCaptureDeviceInput
-            do {
-                audioDeviceInput = try AVCaptureDeviceInput(device: audioDevice)
-            }
-            catch {
-                fatalError("Could not create AVCaptureDeviceInput instance with error: \(error).")
-            }
-            guard captureSession.canAddInput(audioDeviceInput) else {
-                fatalError()
-            }
-            captureSession.addInput(audioDeviceInput)
-        }
-        
+                
         // setup preview
         if let previewContainer = previewContainer {
             guard let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession) else {fatalError()}
