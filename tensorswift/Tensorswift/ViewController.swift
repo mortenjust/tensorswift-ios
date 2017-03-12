@@ -42,18 +42,35 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         }
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        presentSeenObject(label: "peanut")
+    }
+    
 
-    // this function receives a set of seen objects and their probabilities
+    // seen objects enter here
     
     func tensorLabelListUpdated(_ recognizedObjects:[AnyHashable : Any]){
-        
-        print("#tensorlabellist updated with \(recognizedObjects.count) devices ")
         
         for seenObject in recognizedObjects {
             let label = String(describing: seenObject.key)
             let confidence = seenObject.value as! Double
             print("Just saw \(label) with \(confidence)")
+            
+            
+            if confidence > Config.confidence {
+              presentSeenObject(label: label)
+            }
         }
+    }
+    
+    
+    func presentSeenObject(label:String){
+        // create the controller
+//        let v = SeenObjectViewController()
+                
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "webView") as! SeenObjectViewController
+        vc.urlToLoad = Config.seeThisOpenThat[label]
+        self.present(vc, animated: false, completion: nil)
     }
     
     
