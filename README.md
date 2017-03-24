@@ -14,7 +14,7 @@ Run the setup file. This will take about 30 minutes on a Macbook pro
 ```bash
 cd tensorswift-ios
 ./setup.sh
-``
+```
 Open the xcode project
 
 Train a model with <a href="https://www.tensorflow.org/how_tos/image_retraining/">these instructions</a> or use <a href="http://github.com/mortenjust/trainer-mac">Trainer for Mac</a> to do the hard work
