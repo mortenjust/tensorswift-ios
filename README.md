@@ -21,6 +21,6 @@ Run the setup file. This will take about 30 minutes on a Macbook pro
 cd tensorswift-ios
 ./setup.sh
 ```
-The app is set up to do a Google search on the recognized label. You can change that. Open the xcode project, andedit `Config.swift` to change what the app does when it recognizes something.
+The app is set up to do a Google search on the recognized label. You can change that. Open the xcode project, and edit `Config.swift` to change what the app does when it recognizes something.
 
 Train a model with <a href="https://www.tensorflow.org/how_tos/image_retraining/">these instructions</a> or use <a href="http://github.com/mortenjust/trainer-mac">Trainer for Mac</a> to do the hard work
