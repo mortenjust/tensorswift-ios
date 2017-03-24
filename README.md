@@ -8,7 +8,9 @@
 ### Manual
 
 To clone the linked Tensorflow repository, use
-`git clone --recursive -j8 https://github.com/mortenjust/tensorswift-ios.git`
+```
+git clone --recursive -j8 https://github.com/mortenjust/tensorswift-ios.git
+```
 
 Run the setup file. This will take about 30 minutes on a Macbook pro
 ```bash
