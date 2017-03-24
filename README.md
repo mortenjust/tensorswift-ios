@@ -3,11 +3,13 @@
 
 
 ## How to use
+
+### The automatic and codeless way - recommended
  * Install <a href="http://github.com/mortenjust/trainer-mac">Trainer for Mac</a>
  * Click three times
 
 
-### Manual
+### The manual way 
 
 To clone the linked Tensorflow repository, use
 ```
