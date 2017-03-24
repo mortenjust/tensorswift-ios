@@ -17,14 +17,14 @@
 		C87CC5DF1E24BCEB000F83A5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87CC5DE1E24BCEB000F83A5 /* Accelerate.framework */; };
 		C87CC5EC1E260EBE000F83A5 /* ios_image_load.mm in Sources */ = {isa = PBXBuildFile; fileRef = C87CC5E91E260EBE000F83A5 /* ios_image_load.mm */; };
 		C87CC5ED1E260EBE000F83A5 /* tensorflow_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = C87CC5EB1E260EBE000F83A5 /* tensorflow_utils.mm */; };
-		C8B98FD61E748A7800E5D1D5 /* retrained_graph_stripped.pb in Resources */ = {isa = PBXBuildFile; fileRef = C8B98FD41E748A7800E5D1D5 /* retrained_graph_stripped.pb */; };
-		C8B98FD71E748A7800E5D1D5 /* retrained_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = C8B98FD51E748A7800E5D1D5 /* retrained_labels.txt */; };
 		C8B98FD91E7491A000E5D1D5 /* SeenObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B98FD81E7491A000E5D1D5 /* SeenObjectViewController.swift */; };
 		C8B98FDB1E74E04800E5D1D5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B98FDA1E74E04800E5D1D5 /* Config.swift */; };
 		C8D4A38F1E288255005B0640 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4A38E1E288255005B0640 /* VideoCapture.swift */; };
 		C8D4A3911E288321005B0640 /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4A3901E288321005B0640 /* AVCaptureDevice+Extension.swift */; };
 		C8D4A3B81E28B86E005B0640 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D4A3B71E28B86E005B0640 /* UIKit.framework */; };
 		C8D4A3BA1E28BB5C005B0640 /* TensorBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8D4A3B91E28BB5C005B0640 /* TensorBridge.mm */; };
+		C8EE27BB1E85837D0083060E /* retrained_graph_stripped.pb in Resources */ = {isa = PBXBuildFile; fileRef = C8EE27B91E85837D0083060E /* retrained_graph_stripped.pb */; };
+		C8EE27BC1E85837D0083060E /* retrained_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = C8EE27BA1E85837D0083060E /* retrained_labels.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,14 +44,14 @@
 		C87CC5E91E260EBE000F83A5 /* ios_image_load.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ios_image_load.mm; sourceTree = "<group>"; };
 		C87CC5EA1E260EBE000F83A5 /* tensorflow_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tensorflow_utils.h; sourceTree = "<group>"; };
 		C87CC5EB1E260EBE000F83A5 /* tensorflow_utils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = tensorflow_utils.mm; sourceTree = "<group>"; };
-		C8B98FD41E748A7800E5D1D5 /* retrained_graph_stripped.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = retrained_graph_stripped.pb; sourceTree = "<group>"; };
-		C8B98FD51E748A7800E5D1D5 /* retrained_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = retrained_labels.txt; sourceTree = "<group>"; };
 		C8B98FD81E7491A000E5D1D5 /* SeenObjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeenObjectViewController.swift; sourceTree = "<group>"; };
 		C8B98FDA1E74E04800E5D1D5 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		C8D4A38E1E288255005B0640 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		C8D4A3901E288321005B0640 /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
 		C8D4A3B71E28B86E005B0640 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C8D4A3B91E28BB5C005B0640 /* TensorBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TensorBridge.mm; sourceTree = "<group>"; };
+		C8EE27B91E85837D0083060E /* retrained_graph_stripped.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = retrained_graph_stripped.pb; sourceTree = "<group>"; };
+		C8EE27BA1E85837D0083060E /* retrained_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = retrained_labels.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +125,8 @@
 		C8D4A3BB1E294D1B005B0640 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C8B98FD41E748A7800E5D1D5 /* retrained_graph_stripped.pb */,
-				C8B98FD51E748A7800E5D1D5 /* retrained_labels.txt */,
+				C8EE27B91E85837D0083060E /* retrained_graph_stripped.pb */,
+				C8EE27BA1E85837D0083060E /* retrained_labels.txt */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -192,8 +192,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B98FD61E748A7800E5D1D5 /* retrained_graph_stripped.pb in Resources */,
-				C8B98FD71E748A7800E5D1D5 /* retrained_labels.txt in Resources */,
+				C8EE27BB1E85837D0083060E /* retrained_graph_stripped.pb in Resources */,
+				C8EE27BC1E85837D0083060E /* retrained_labels.txt in Resources */,
 				C87CC5CE1E24B863000F83A5 /* LaunchScreen.storyboard in Resources */,
 				C87CC5CB1E24B863000F83A5 /* Assets.xcassets in Resources */,
 				C87CC5C91E24B863000F83A5 /* Main.storyboard in Resources */,
